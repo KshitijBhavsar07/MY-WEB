@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kshitij Bhavsar - Futuristic</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0a0a0a; 
+            color: #fff;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #0ff;
+            margin: 20px 0;
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px #0ff, 0 0 30px #00f;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+        h3{
+            font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(74deg, #d18514, #5f1f94, #7dbc2a, #fd521e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 15px auto;
+            padding: 15px;
+            font-size: 1em;
+            background: rgba(0, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+
+        hr {
+            margin: 30px auto;
+            width: 50%;
+            border: none;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        a {
+            color: #0ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #00f;
+        }
+
+        button {
+            background: linear-gradient(145deg, #00f, #0ff);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+            max-width: 80%;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        
+        .star {
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: #fff;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: fallStar linear infinite;
+        }
+
+        @keyframes fallStar {
+            0% {
+                transform: translateY(-50px) translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) translateX(-100vw);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Kshitij Bhavsar</h1>
+    <p>Hello! I'm <strong>Kshitij Rajesh Bhavsar</strong>, a passionate UI/UX designer and front-end developer with skills in HTML, CSS, JavaScript, and Java. I love creating beautiful, user-friendly websites and exploring new technologies.</p>
+
+    <h2>Professional Background</h2> 
+    <p>I have extensive experience working on web development projects, and my expertise includes building responsive and interactive designs. I'm constantly learning new skills and staying updated with the latest trends in tech.</p>
+    
+    <hr>
+
+    <h2>Current Focus</h2>
+    <p>Right now, I'm focusing on <strong>self-skilling</strong> in various areas, including Cybersecurity, and AI & ML , aiming to stay versatile and prepared for the evolving tech landscape.</p>
+
+    <hr>
+    <h2>Professional Identity</h2>
+    <p>In professional life, Kshitij Bhavsar prefers a polished, understated identity that focuses on the projects and achievements rather than flashy presentation.</p>
+
+    <hr>
+    <h2>My Passion for Nature and Sports</h2>
+    <div class="passion-box">
+        <p>I am deeply passionate about nature and love spending time outdoors, especially climbing mountains. There's something magical about reaching new heights and enjoying the tranquility of natural surroundings. On weekends, I like to immerse myself in the beauty of nature, whether it's exploring lush greenery, hiking, or simply watching a beautiful sunset.</p>
+        <p>In addition to my love for nature, I am an avid sports enthusiast. I enjoy playing cricket, badminton, and football. These sports not only keep me physically active but also allow me to enjoy friendly competition and teamwork with friends.</p>
+    </div>
+    
+    <hr>
+
+    <h2>Connect With Me</h2>
+    <p>Feel free to reach out to me via <a href="https://www.linkedin.com/in/kshitij-bhavsar-159515290/">LinkedIn</a>.</p>
+
+    <h2>Image Gallery OF Me and MYTeam</h2>
+    <div class="gallery">
+        <img src="imggallery2.jpeg" alt="me and my team">
+        <img src="imggallery7.jpeg" alt="me and my team">
+        <img src="imggallery4.jpeg" alt="me and my team">
+        <img src="imggallery10.jpeg" alt="me and my team">
+        <img src="imggallery11.jpeg" alt="me and my team">
+        <img src="imggallery3.jpeg" alt="me and my team">
+        <img src="imggallery5.jpeg" alt="me and my team">
+        <img src="imggallery6.jpeg" alt="me and my team">
+        <img src="imggallery9.jpeg" alt="me and my team">
+    </div>
+    <h3>Thank you for visiting and learning more about me!</h3>
+    <script>
+       function createStar() {
+    const star = document.createElement('div');
+    star.classList.add('star');
+
+   
+    const size = Math.random() * 3 + 1; 
+    star.style.width = `${size}px`;
+    star.style.height = `${size}px`;
+    star.style.left = `${Math.random() * 100}vw`; 
+    star.style.animationDuration = `${Math.random() * 10 + 8}s`; 
+
+    document.body.appendChild(star);
+
+   
+    star.addEventListener('animationend', () => {
+        star.remove();
+    });
+}
+
+    </script>
+</body>
+</html>
